@@ -1,12 +1,14 @@
+import Navbar from "@/components/backend-ui/Navbar";
 import Sidebar from "@/components/backend-ui/Sidebar";
 import React from "react";
 
 const layout = ({ children }) => {
   return (
-    <div className="flex">
+    <div className="flex gap-1">
       <Sidebar />
       <div className="w-full">
-        <nav>Navabr</nav>
+        <Navbar />
+
         <main>{children}</main>
       </div>
     </div>
