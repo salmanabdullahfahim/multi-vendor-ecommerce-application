@@ -4,12 +4,14 @@ import React from "react";
 
 const layout = ({ children }) => {
   return (
-    <div className="flex gap-1">
+    <div className="flex">
       <Sidebar />
       <div className="w-full">
         <Navbar />
 
-        <main>{children}</main>
+        <main className="p-8 bg-slate-950 text-white min-h-screen mt-16">
+          {children}
+        </main>
       </div>
     </div>
   );
