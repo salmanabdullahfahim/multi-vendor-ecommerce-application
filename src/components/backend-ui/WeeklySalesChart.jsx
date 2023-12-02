@@ -31,17 +31,19 @@ const WeeklySalesChart = () => {
         <div className="hidden sm:block">
           <div className="border-b border-gray-400">
             <nav className="-mb-px flex gap-6" aria-label="Tabs">
-              <button className="shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-400 hover:border-green-400 hover:text-green-400">
+              <button className="shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-400 active:border-green-400 hover:text-green-400">
                 Sales
               </button>
 
-              <button className="shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-400 hover:border-orange-400 hover:text-orange-400">
+              <button className="shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-400 active:border-orange-400 hover:text-orange-400">
                 Orders
               </button>
             </nav>
           </div>
         </div>
       </div>
+
+      {/* graph */}
     </div>
   );
 };

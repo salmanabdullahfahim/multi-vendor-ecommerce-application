@@ -32,7 +32,9 @@ const BestSellingChart = () => {
   return (
     <div className="bg-slate-700 p-8 rounded-lg">
       <h2 className="text-xl font-bold mb-4">Best selling products</h2>
-      <Pie data={data} />
+      <div className="p-3">
+        <Pie data={data} />
+      </div>
     </div>
   );
 };
